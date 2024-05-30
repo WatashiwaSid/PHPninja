@@ -9,7 +9,7 @@ if($con)
 {
     try
     {
-        mysqli_query($con, "CREATE DATABASE ninjadb");
+        mysqli_query($con, "CREATE DATABASE IF NOT EXISTS gehu");
         echo "Database successfully created";
     }
 
